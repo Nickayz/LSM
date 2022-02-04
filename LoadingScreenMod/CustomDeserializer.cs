@@ -140,7 +140,7 @@ namespace LoadingScreenMod
                     m_laneType = (NetInfo.LaneType) r.ReadInt32(),
                     m_vehicleType = (VehicleInfo.VehicleType) r.ReadInt32(),
                     m_stopType = (VehicleInfo.VehicleType) r.ReadInt32(),
-                    m_laneProps = GetNetLaneProps(p, r),
+                    m_laneProps = (NetLaneProps)CustomDeserialize(p, typeof(NetLaneProps), r),
                     m_allowConnect = r.ReadBoolean(),
                     m_useTerrainHeight = r.ReadBoolean(),
                     m_centerPlatform = r.ReadBoolean(),
