@@ -544,6 +544,11 @@ namespace LoadingScreenMod
               new KeyValuePair<string, int>("Station6Prefabs",     1065490),
               new KeyValuePair<string, int>("Station7Prefabs",     1065491),
               new KeyValuePair<string, int>("Station8Prefabs",     1148021),
+              new KeyValuePair<string, int>("Station9Prefabs",     1196100),
+              new KeyValuePair<string, int>("Station10Prefabs",    1531472),
+              new KeyValuePair<string, int>("Station11Prefabs",    1531473),
+              new KeyValuePair<string, int>("Station12Prefabs",    1726383),
+              new KeyValuePair<string, int>("Station13Prefabs",    1726384),
               new KeyValuePair<string, int>("FestivalPrefabs",     614581),
               new KeyValuePair<string, int>("ChristmasPrefabs",    715192),
               new KeyValuePair<string, int>("ModderPack1Prefabs",  515190),
@@ -552,7 +557,8 @@ namespace LoadingScreenMod
               new KeyValuePair<string, int>("ModderPack5Prefabs",  1148020),
               new KeyValuePair<string, int>("ModderPack6Prefabs",  1148022),
               new KeyValuePair<string, int>("ModderPack7Prefabs",  1531470),
-              new KeyValuePair<string, int>("ModderPack8Prefabs",  1531471)
+              new KeyValuePair<string, int>("ModderPack8Prefabs",  1531471),
+              new KeyValuePair<string, int>("ModderPack10Prefabs", 1726381)
         };
 
         bool Check(int dlc) => SteamHelper.IsDLCOwned((SteamHelper.DLC) dlc) && (!Settings.settings.SkipPrefabs || !Settings.settings.SkipMatcher.Matches(dlc));
