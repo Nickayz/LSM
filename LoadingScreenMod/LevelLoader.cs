@@ -505,7 +505,7 @@ namespace LoadingScreenMod
                 levels.Add(new KeyValuePair<string, float>(isWinter ? "WinterExpansion9Prefabs" : "Expansion9Prefabs", 0.11f));
 
             if (LoadingManager.instance.m_supportsExpansion[9])
-                levels.Add(new KeyValuePair<string, float>(isWinter ? "WinterExpansion10Prefabs" : "Expansion10Prefabs", 0.11f));
+                levels.Add(new KeyValuePair<string, float>("Expansion10Prefabs", 0.11f));
 
             for (int i = 0; i < levelStrings.Length; i++)
                 if (Check(levelStrings[i].Value))
